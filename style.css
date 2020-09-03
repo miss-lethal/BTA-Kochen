@@ -1,0 +1,29 @@
+body{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    background-color: black; 
+    color:white;
+}
+/*Kommentar: Selektor ID mit dem Namen nummer-1
+*ID in CSS wird zu einem #
+*/
+#nummer-1{
+    background-color: pink;
+}
+#nummer-2{
+    color: green;
+}
+div{
+    height: 100px;
+    background: blue;
+    margin: 10px;
+}
+.aqua{
+    background-color: aquamarine;
+} 
