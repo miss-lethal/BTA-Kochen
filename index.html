@@ -9,18 +9,34 @@
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <h1>Das ist eine Überschrift</h1>
-      <img src="img/burger.jpg" alt="Burger auf Teller" width="700" title="Huhu">
-      <p id="nummer-1">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis facere nisi sapiente mollitia voluptate, hic minima voluptatum voluptatem dolor praesentium labore a molestias magnam aliquid, voluptates aperiam inventore impedit harum.
-      </p>
-      <p id="nummer-2"> 
-          Zweiter Text soll  hier auch mal mit rein...
-      </p>
+     <header>
+         <a href="#">
+             <img src="img/logo.png" alt="Logo Kochen BTA-Kochmütze mit Brille" height="40px"> <!--markus lässt px hinten dran weg, in html kann das weggelassen werden, aber in css müsste es ran-->
+         </a>
 
-      <div class="aqua"></div>
-      <div></div>
-      <div class="aqua"></div>
+         <button id="burger">
+             <img src="img/menu.svg" alt="zum Hauptmenü" height="40">
+         </button>
 
+         <nav class="hidden">
+             <ul>
+                 <li>
+                     <a href="#">Home</a>
+                 </li>
+                 <li>
+                     <a href="#">Rezepte</a>
+                 </li>
+                 <li>
+                     <a href="#">Kategorien</a>
+                 </li>
+                 <li>
+                     <a href="#">Über uns</a>
+                 </li>
+             </ul>
+         </nav>
+    </header>
+
+    <script src="js/menu.js"></script>
+    
   </body>
 </html>
