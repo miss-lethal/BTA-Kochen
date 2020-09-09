@@ -47,7 +47,8 @@ header {
 /* kann auch ohne class-zuweisung arbeiten und es dann so schreiben:
 header nav{
     display:none;
-}*/
+}
+*/
 
 .show {
   display: block;
@@ -56,7 +57,6 @@ header nav{
   top: 64px;
   background:white;
   width:100%;
-  opacity:0.75;
 }
 
 #hero{
@@ -68,6 +68,10 @@ header nav{
     background-size: cover;
     color:white;
     text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+     
 }
 
 .button {
@@ -76,9 +80,73 @@ header nav{
     border: 2px solid #374a67;
     border-radius: 5px;
     padding:15px;
-    box-shadow: grey;
+    box-shadow:0 4px 6px 0px rgba(0,0,0,0.5);
+    display:inline-block;
+    margin-top:8px;
+    transition:0.4s;
+}
+
+.button:hover
+{
+  background:#374a67;
+  color:white;
+  border: 2px solid white;
 
 }
+
+.button-blue{
+  background:#374a67;
+  color:white;
+  margin-bottom:16px;
+  width:85%;
+  /*anstelle von width geht auch:
+  display:block;
+  margin-left:16px;
+  margin-right:16px;*/
+  transition:0.4s;
+ } 
+
+ .button-blue:hover
+{
+  color:#374a67;
+  background: white;
+  border: 2px solid #374a67;
+
+}
+
+.karte{
+  color: #333;
+  border-radius: 5px;
+  overflow:hidden;
+  text-align: center;
+  box-shadow:0 4px 6px 0px rgba(0,0,0,0.5);
+  margin:16px;
+}
+
+.karte img{
+  width:100%;
+  height:auto;
+}
+
+.karte p{
+  color:#828282;
+  text-shadow: 4px 4px 2px rgba(150,150,150,0.3);
+  padding-left:16px;
+  padding-right:16px;
+}
+
+/*#rezepte*/ h2{
+  color:#333;
+  text-align: center;
+}
+
+.box{ /*hatte selbst hier direkt aside angesprochen und keine extra divs definiert in html, aber so ist es bei Markus (geht aber auch)*/
+  background:#04122B;
+  color:#fff;
+  text-align:center;
+  padding:64px 16px;
+}
+
 
 @media (min-width: 960px) {
   .hidden {
@@ -91,5 +159,9 @@ header nav{
 
   nav ul {
     display: flex;
+  }
+
+  .reihe{
+    display:flex;
   }
 }
