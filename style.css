@@ -1,43 +1,47 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin:0;
-    line-height: 1.5;
-}
-
-a{
-    color:#000000;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.5;
 }
 
-li{
-    list-style-type: none;
-    text-align: center;
-    margin:0 10px;  
+a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-li a:hover{
-    color: #fff;
-    background: #374a67;
+li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 10px;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 64px;
-    padding-left:5%;
-    padding-right:5%;
-    /*Kurschreibweise: padding: 0 5%; */
+li a:hover {
+  color: #fff;
+  background: #374a67;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding-left: 5%;
+  padding-right: 5%;
+  /*Kurschreibweise: padding: 0 5%; */
+}
 
-.hidden{
-    display:none;
+#burger {
+  background-color: transparent;
+  border: none;
+}
+
+.hidden {
+  display: none;
 }
 
 /* kann auch ohne class-zuweisung arbeiten und es dann so schreiben:
@@ -45,17 +49,47 @@ header nav{
     display:none;
 }*/
 
-@media (min-width:960px)
-{
-    .hidden{
-        display:block;
-     }
+.show {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  background:white;
+  width:100%;
+  opacity:0.75;
+}
 
-     #burger{
-        display: none;
-     }
+#hero{
+    background-image: url('img/intro.jpg');
+    background-color: black;
+    height: 100vh; /*vh=viewport-height; vw=viewport-width*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    text-align: center;
+}
 
-    nav ul{
-        display: flex;
-    }
+.button {
+    color:#374a67;
+    background: white;
+    border: 2px solid #374a67;
+    border-radius: 5px;
+    padding:15px;
+    box-shadow: grey;
+
+}
+
+@media (min-width: 960px) {
+  .hidden {
+    display: block;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
 }
