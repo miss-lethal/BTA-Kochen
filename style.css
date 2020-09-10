@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   line-height: 1.5;
 }
@@ -55,98 +56,126 @@ header nav{
   position: absolute;
   left: 0;
   top: 64px;
-  background:white;
-  width:100%;
+  background: white;
+  width: 100%;
 }
 
-#hero{
-    background-image: url('img/intro.jpg');
-    background-color: black;
-    height: 100vh; /*vh=viewport-height; vw=viewport-width*/
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color:white;
-    text-align: center;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-     
+#hero {
+  background-image: url("img/intro.jpg");
+  background-color: black;
+  height: 100vh; /*vh=viewport-height; vw=viewport-width*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
-    color:#374a67;
-    background: white;
-    border: 2px solid #374a67;
-    border-radius: 5px;
-    padding:15px;
-    box-shadow:0 4px 6px 0px rgba(0,0,0,0.5);
-    display:inline-block;
-    margin-top:8px;
-    transition:0.4s;
+  color: #374a67;
+  background: white;
+  border: 2px solid #374a67;
+  border-radius: 5px;
+  padding: 16px;
+  box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin-top: 8px;
+  transition: 0.4s;
 }
 
-.button:hover
-{
-  background:#374a67;
-  color:white;
+.button:hover {
+  background: #374a67;
+  color: white;
   border: 2px solid white;
-
 }
 
-.button-blue{
-  background:#374a67;
-  color:white;
-  margin-bottom:16px;
-  width:85%;
+.button-blue {
+  background: #374a67;
+  color: white;
+  margin-bottom: 16px;
+  width: 85%;
   /*anstelle von width geht auch:
   display:block;
   margin-left:16px;
   margin-right:16px;*/
-  transition:0.4s;
- } 
+  transition: 0.4s;
+}
 
- .button-blue:hover
-{
-  color:#374a67;
+.button-blue:hover {
+  color: #374a67;
   background: white;
   border: 2px solid #374a67;
-
 }
 
-.karte{
+.karte {
   color: #333;
   border-radius: 5px;
-  overflow:hidden;
+  overflow: hidden;
   text-align: center;
-  box-shadow:0 4px 6px 0px rgba(0,0,0,0.5);
-  margin:16px;
+  box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.5);
+  margin: 16px;
 }
 
-.karte img{
-  width:100%;
-  height:auto;
+.karte img {
+  width: 100%;
+  height: auto;
 }
 
-.karte p{
-  color:#828282;
-  text-shadow: 4px 4px 2px rgba(150,150,150,0.3);
-  padding-left:16px;
-  padding-right:16px;
+.karte p {
+  color: #828282;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.3);
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-/*#rezepte*/ h2{
-  color:#333;
+/*#rezepte*/
+h2 {
+  color: #333;
   text-align: center;
 }
 
-.box{ /*hatte selbst hier direkt aside angesprochen und keine extra divs definiert in html, aber so ist es bei Markus (geht aber auch)*/
-  background:#04122B;
-  color:#fff;
-  text-align:center;
-  padding:64px 16px;
+.box {
+  /*hatte selbst hier direkt aside angesprochen und keine extra divs definiert in html, aber so ist es bei Markus (geht aber auch)*/
+  background: #04122b;
+  color: #fff;
+  text-align: center;
+  padding: 64px 16px;
 }
 
+form input,
+form button {
+  color: #374a67;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 16px;
+  margin-left: -4px;
+  background: white;
+}
+
+form .button {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+form input {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+nav.socialmedia ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+footer {
+  padding: 48px 5%;
+}
 
 @media (min-width: 960px) {
   .hidden {
@@ -157,11 +186,21 @@ header nav{
     display: none;
   }
 
-  nav ul {
+  nav.hidden ul {
     display: flex;
   }
 
-  .reihe{
-    display:flex;
+  .reihe {
+    display: flex;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav.recht ul {
+    display: flex;
   }
 }
